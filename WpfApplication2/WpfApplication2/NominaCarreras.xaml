@@ -1,0 +1,19 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WpfApplication2" x:Class="WpfApplication2.NominaCarreras"
+        Title="NominaCarreras" Height="325.94" Width="491.729" Loaded="Window_Loaded">
+    <Window.Resources>
+        <local:bd_inacapDataSet x:Key="bd_inacapDataSet"/>
+        <CollectionViewSource x:Key="carrerasViewSource" Source="{Binding carreras, Source={StaticResource bd_inacapDataSet}}"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource carrerasViewSource}" Margin="0,0,53,31">
+        <DataGrid x:Name="carrerasDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="0,0,-29,-10" SelectionChanged="carrerasDataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="id_carreraColumn" Binding="{Binding id_carrera}" Header="ID Carrera" Width="100"/>
+                <DataGridTextColumn x:Name="nombre_carreraColumn" Binding="{Binding nombre_carrera}" Header="Nombre Carrera" Width="280"/>
+                <DataGridTextColumn x:Name="tipo_carreraColumn" Binding="{Binding tipo_carrera}" Header="Tipo" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
