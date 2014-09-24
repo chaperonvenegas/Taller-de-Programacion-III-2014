@@ -24,5 +24,38 @@ namespace WpfApplication1
         {
             InitializeComponent();
         }
+
+  
+
+
+        private void txt_edad_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            txt_edad.Clear();
+            lbl_resultado.Content = "";
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                int edad =Convert.ToInt16(txt_edad.Text);
+                var r = lbl_resultado;
+                if (edad > 0 && edad <= 10)
+                {
+                    r.Content = "El peso ideal es " + (edad* 2 + 8) + " kilos.";
+                }
+                else
+                {
+                   // r.Content = "Edad inválida para calcular.";
+                    MessageBox.Show("Edad inválida para calcular","Error", MessageBoxButton.OK,MessageBoxImage.Exclamation);
+                }
+                }
+            catch (Exception ex)
+            {
+
+                lbl_resultado.Content = "Ingrese una edad válida.";
+            }
+            
+        }
     }
 }

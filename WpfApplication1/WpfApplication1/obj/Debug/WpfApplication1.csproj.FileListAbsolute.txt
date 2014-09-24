@@ -11,3 +11,5 @@ F:\RepoGithub\Taller-de-Programacion-III-2014\WpfApplication1\WpfApplication1\ob
 F:\RepoGithub\Taller-de-Programacion-III-2014\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
 F:\RepoGithub\Taller-de-Programacion-III-2014\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
 F:\RepoGithub\Taller-de-Programacion-III-2014\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
+F:\RepoGithub\Taller-de-Programacion-III-2014\WpfApplication1\WpfApplication1\obj\Debug\WindowCarreras.baml
+F:\RepoGithub\Taller-de-Programacion-III-2014\WpfApplication1\WpfApplication1\obj\Debug\WindowCarreras.g.cs

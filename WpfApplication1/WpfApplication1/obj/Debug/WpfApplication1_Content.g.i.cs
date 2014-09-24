@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/logo-inacap.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/1411547090_man.png")]
 
 
